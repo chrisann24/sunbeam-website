@@ -15,4 +15,8 @@ function greetUser() {
                 document.getElementById("greetingMessage").textContent = "Please enter a name.";
             }
         }
-        
+
+
+document.querySelector('#netherlandsButton').addEventListener('click', () => {
+    document.getElementById("location").textContent = "the Netherlands";
+})

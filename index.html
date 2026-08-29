@@ -29,9 +29,9 @@
     <div class="step" id="step2">
         <h2>Hi, <span class="fill-name"></span>! Where are you waking up on this perfect day?</h2>
         <div class="options">
-            <button class="option-btn" onclick="saveLocation('in the netherlands')">A cozy beach cabin</button>
-            <button class="option-btn" onclick="saveLocation('in a grassy area')">A bustling city penthouse</button>
-            <button class="option-btn" onclick="saveLocation('in the middle of the ocean')">A quiet mountain chalet</button>
+            <button id="netherlandsButton" class="option-btn">The Netherlands</button>
+            <button id="grassyArea" class="option-btn" onclick="saveLocation('in a grassy area')">A grassy area</button>
+            <button id="ocean" class="option-btn" onclick="saveLocation('in the middle of the ocean')">middle of the ocean</button>
         </div>
     </div>
 
@@ -54,7 +54,9 @@
     <!-- Step 5: Summary -->
     <div class="step" id="step5">
         <h2>Your Perfect Day Blueprint</h2>
-        <p><strong><span class="fill-name"></span>'s</strong> perfect day starts by waking up in <strong><span class="fill-location"></span></strong>.</p>
+        
+        <p>'s</strong> perfect day starts by waking up in: <strong><span class="fill-location"></span></strong>.</p>
+        <p id="location"></p>
         <p>The very first thing on the agenda is to <strong><span class="fill-activity"></span></strong>.</p>
         <p>To make the day complete, the journey is shared with <strong><span class="fill-companion"></span></strong>.</p>
         <br>
