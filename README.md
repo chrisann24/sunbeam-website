@@ -1,5 +1,4 @@
-*My.website* 
-<Title> My Website </Title>
+# My Website #
 My website is a interactive website where the program acts as your friend, it asks you questions about your day as well a preferences which would make it your ideal 'perfect day'. 
 Some of the buttons don't work however I have been working with some other participants to try and solve it - vivienne Chen was my partner who helped me the most and we acutally did make a lot of progress with the syntax so I think there might be a logic error in this case. 
 The exact buttons which dont work are the: 
