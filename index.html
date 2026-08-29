@@ -1,0 +1,64 @@
+<!DOCTYPE html/>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body> 
+    <script src="script.js"></script>
+    <h1> Welcome to a series of your perfect day! </h1>
+    <h2> In this series your will construct your perfect day :) </h2>
+    <title>My PERFECT Day</title>
+    <p> for starters whats your name? </p>
+        <label for="nameInput">Enter your name:</label>
+    <input type="text" id="nameInput" placeholder="Type your name here">
+    <button onclick="greetUser()">Submit</button>
+    <h2 id="greetingMessage"></h2>
+
+    <img src="https://c8.alamy.com/comp/2DYXW27/vector-cartoon-stick-figure-illustration-of-smiling-positive-man-or-businessman-holding-and-showing-you-sign-2DYXW27.jpg" alt="Picture of banana">
+    <ul>
+   <li>banana1<li>     
+   
+    </ul>
+<script src="script.js"></script>
+<button onclick="Click()">click here!</button>
+ 
+</head>
+<div class="card">
+    <!-- Step 2: Location -->
+    <div class="step" id="step2">
+        <h2>Hi, <span class="fill-name"></span>! Where are you waking up on this perfect day?</h2>
+        <div class="options">
+            <button class="option-btn" onclick="saveLocation('in the netherlands')">A cozy beach cabin</button>
+            <button class="option-btn" onclick="saveLocation('in a grassy area')">A bustling city penthouse</button>
+            <button class="option-btn" onclick="saveLocation('in the middle of the ocean')">A quiet mountain chalet</button>
+        </div>
+    </div>
+
+    <!-- Step 3: Activity based on location -->
+    <div class="step" id="step3">
+        <h2>Waking up in <span class="fill-location"></span> sounds amazing. What do you do first?</h2>
+        <input type="text" id="activityInput" placeholder="e.g., drink coffee, go for a run">
+        <br><br>
+        <button onclick="nextStep(3)">Next</button>
+    </div>
+
+    <!-- Step 4: Companion -->
+    <div class="step" id="step4">
+        <h2>After you <span class="fill-activity"></span>, who are you spending the rest of the day with?</h2>
+        <input type="text" id="companionInput" placeholder="e.g., my best friend, my dog, solo">
+        <br><br>
+        <button onclick="nextStep(4)">Finish</button>
+    </div>
+
+    <!-- Step 5: Summary -->
+    <div class="step" id="step5">
+        <h2>Your Perfect Day Blueprint</h2>
+        <p><strong><span class="fill-name"></span>'s</strong> perfect day starts by waking up in <strong><span class="fill-location"></span></strong>.</p>
+        <p>The very first thing on the agenda is to <strong><span class="fill-activity"></span></strong>.</p>
+        <p>To make the day complete, the journey is shared with <strong><span class="fill-companion"></span></strong>.</p>
+        <br>
+        <button onclick="restart()">Design Another Day</button>
+    </div>
+</div>
+</body> 
